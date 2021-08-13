@@ -14,3 +14,12 @@ sed -e '/    - --port=0/d' -i /etc/kubernetes/manifests/kube-controller-manager.
 sed -e '/    - --port=0/d' -i /etc/kubernetes/manifests/kube-scheduler.yaml
 
 systemctl restart kubelet
+
+
+# Access cluseter from non-root
+# mkdir -p $HOME/.kube
+# sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+# sudo chown $(id -u):$(id -g) $HOME/.kube/config 
+
+# Access cluser from root
+# export KUBECONFIG=/etc/kubernetes/admin.conf
