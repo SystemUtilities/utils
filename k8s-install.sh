@@ -9,7 +9,7 @@ sudo apt-get update -y && apt-get upgrade -y
 apt-get install -y kubeadm kubectl kubelet
 apt-mark hold kubeadm kubectl kubelet
 
-# Adding kubernetes-$(lsb_release -cs), i.e. 
+# Adding kubernetes-$(lsb_release -cs), i.e.
 # focal source does not install kubelet and kubeadmin.
 # echo "deb https://apt.kubernetes.io/ kubernetes-$(lsb_release -cs) main" \
 #   | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
