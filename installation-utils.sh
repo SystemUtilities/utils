@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-sudo apt-get update -y 
+sudo apt-get update -y
 sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
